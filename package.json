@@ -22,7 +22,8 @@
   "homepage": "https://github.com/JessicaML/react-to-do-list-app#readme",
   "dependencies": {
     "react": "^15.4.2",
-    "react-dom": "^15.4.2"
+    "react-dom": "^15.4.2",
+    "webpack": "^2.1.0-beta.21"
   },
   "devDependencies": {
     "babel-core": "^6.24.0",
@@ -30,7 +31,10 @@
     "babel-preset-es2015": "^6.24.0",
     "babel-preset-react": "^6.23.0",
     "react-hot-loader": "^1.3.1",
-    "webpack": "^2.3.0",
-    "webpack-dev-server": "^2.4.2"
+    "webpack": "^1.12.13",
+    "webpack-dev-server": "^1.14.1"
+  },
+  "engines": {
+    "node": "5.5.0"
   }
 }
