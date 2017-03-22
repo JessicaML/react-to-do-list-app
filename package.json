@@ -22,6 +22,7 @@
   "homepage": "https://github.com/JessicaML/react-to-do-list-app#readme",
   "dependencies": {
     "react": "^15.4.2",
+    "react-bootstrap": "^0.30.8",
     "react-dom": "^15.4.2",
     "webpack": "^2.1.0-beta.21"
   },
