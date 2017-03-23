@@ -29,13 +29,10 @@ export default class TodosListItem extends React.Component {
             <div style={taskStyle}
             >
                 {task}
-                <button>Complete</button>
-
+                <button class="btn-success" onClick={this.props.toggleTask.bind(this, this.props.task)}>Complete</button>
             </div>
         );
     }
-
-
 
     render() {
         return (

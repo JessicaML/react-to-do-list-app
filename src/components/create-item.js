@@ -9,6 +9,8 @@ export default class CreateItem extends React.Component {
     }
 
     renderError() {
+      return <div style={{ textDecorationLine: 'none' }}>{this.state.error}</div>;
+
     }
 
     render() {
