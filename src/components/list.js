@@ -12,12 +12,12 @@ export default class List extends React.Component {
 
     render() {
         return (
-            <table>
+            <div>
                 <ListHeader />
-                <tbody>
+                <div>
                     {this.renderItems()}
-                </tbody>
-            </table>
+                </div>
+            </div>
         );
     }
 }
