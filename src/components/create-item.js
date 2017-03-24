@@ -23,7 +23,7 @@ export default class CreateItem extends React.Component {
     }
 
     handleCreate(event) {
-      //Prevent page refresh when button clicked
+      /*Prevent page refresh when button clicked*/
         event.preventDefault();
         const createInput = this.refs.createInput;
         const task = createInput.value;

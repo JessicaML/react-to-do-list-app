@@ -1,10 +1,14 @@
+/* use react module */
 import React from 'react';
+
+/* import modules for creating items and list - modular design */
 import CreateTodo from './create-item';
 import List from './list';
 
+/*create some dummy-example tasks */
 const todos = [
 {
-    task: 'make  tutorial',
+    task: 'do  tutorial',
     isCompleted: false
 },
 {
@@ -12,8 +16,9 @@ const todos = [
     isCompleted: false
 }
 ];
-
+/*export App module (referenced in index.js, the start file) */
 export default class App extends React.Component {
+   /* 'props' pass the properties from the parent element */
     constructor(props) {
         super(props);
 
@@ -35,12 +40,14 @@ export default class App extends React.Component {
         );
     }
 
+    /*set state from complete to incomplete (or vice versa) */
     toggleTask(task) {
         const foundTodo = _.find(this.state.todos, todo => todo.task === task);
         foundTodo.isCompleted = !foundTodo.isCompleted;
         this.setState({ todos: this.state.todos });
     }
 
+    /*create a */
     createTask(task) {
         this.state.todos.push({
             task,

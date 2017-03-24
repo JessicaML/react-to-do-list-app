@@ -6,7 +6,7 @@ import ListItem from './list-item';
 export default class List extends React.Component {
     renderItems() {
         const props = _.omit(this.props, 'todos');
-
+        /*loops through todos to render _ syntax is for lodash.  */
         return _.map(this.props.todos, (todo, index) => <ListItem key={index} {...todo} {...props} />);
     }
 
