@@ -9,6 +9,8 @@ Enter the following commands in the terminal:
  - $ git clone git@github.com:JessicaML/react-to-do-list-app.git
  - $ cd react-to-do-list-app
  - $ npm install
+ - $ webpack-dev-server
+
 
 Then go to localhost:8080 in your web browser
 
