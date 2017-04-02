@@ -15,21 +15,14 @@ export default class TodosListItem extends React.Component {
             textDecorationLine: isCompleted ? 'line-through' : 'none',
         };
 
-        if (this.state.isEditing) {
-            return (
-                <div>
-                    <form onSubmit={this.onSaveClick.bind(this)}>
-                        <input type="text" defaultValue={task} ref="editInput" />
-                    </form>
-                </div>
-            );
-        }
+
 
         return (
             <div style={taskStyle}
             >
+            <button class="btn-success" onClick={this.props.toggleTask.bind(this, this.props.task)}>Complete</button>
+
                 {task}
-                <button class="btn-success" onClick={this.props.toggleTask.bind(this, this.props.task)}>Complete</button>
             </div>
         );
     }
