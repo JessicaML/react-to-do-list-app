@@ -21,7 +21,7 @@ export default class App extends React.Component {
    /* 'props' pass the properties from the parent element */
     constructor(props) {
         super(props);
-
+          /*pass in todos*/
         this.state = {
             todos
         };
@@ -29,11 +29,14 @@ export default class App extends React.Component {
 
     render() {
         return (
+          /*render export from create-item.js, run createTask function below to create task*/
             <div>
                 <h1>React To Dos List App</h1>
                 <CreateTodo todos={this.state.todos} createTask={this.createTask.bind(this)} />
                 <List
+                    /*render todos item*/
                     todos={this.state.todos}
+                    /*task toggle - complete/incomplete*/
                     toggleTask={this.toggleTask.bind(this)}
                 />
             </div>
@@ -47,7 +50,7 @@ export default class App extends React.Component {
         this.setState({ todos: this.state.todos });
     }
 
-    /*create a task*/
+    /*create a task */
     createTask(task) {
         this.state.todos.push({
             task,
