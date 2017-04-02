@@ -1,4 +1,9 @@
 import React from 'react';
+ const btnStyle = {
+        margin: '5px',
+    };
+
+
 
 export default class CreateItem extends React.Component {
     constructor(props) {
@@ -17,7 +22,7 @@ export default class CreateItem extends React.Component {
         return (
             <form onSubmit={this.handleCreate.bind(this)}>
                 <input type="text" placeholder="task" ref="createInput" />
-                <button>Create</button>
+                <button className="btn btn-info" style={btnStyle}>Create</button>
             </form>
         );
     }

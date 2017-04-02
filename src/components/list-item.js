@@ -1,4 +1,8 @@
 import React from 'react';
+ const btnStyle = {
+        margin: '5px',
+    };
+
 
 export default class TodosListItem extends React.Component {
     constructor(props) {
@@ -8,6 +12,7 @@ export default class TodosListItem extends React.Component {
         };
     }
 
+   
     renderTaskSection() {
         const { task, isCompleted } = this.props;
 
@@ -20,7 +25,7 @@ export default class TodosListItem extends React.Component {
         return (
             <div style={taskStyle}
             >
-            <button class="btn-success" onClick={this.props.toggleTask.bind(this, this.props.task)}>Complete</button>
+            <button className="btn btn-success" onClick={this.props.toggleTask.bind(this, this.props.task)} style={btnStyle}>Complete</button>
 
                 {task}
             </div>
